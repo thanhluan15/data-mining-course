@@ -1,8 +1,8 @@
 
-import numpy as np 
+import numpy as np
 import pandas as pd
 import statistics as st
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 from scipy.stats import skew
 from scipy.stats import kurtosis
 
@@ -15,22 +15,30 @@ gdp_bq
 print(len(gdp_bq))
 
 # Min
-print(min(gdp_bq["GDP"]))
+print("Min: ", gdp_bq["GDP"].min())
 
 # Max
-print(gdp_bq["GDP"].max())
+print("Max: ", gdp_bq["GDP"].max())
 
 # Mean (Average)
-print(gdp_bq["GDP"].mean())
+print("Mean: ", gdp_bq["GDP"].mean())
 
 # Median
-print(gdp_bq["GDP"].median())
+print("Median: ", gdp_bq["GDP"].median())
 
+# Variance
+print("Variance: ", gdp_bq["GDP"].var())
 
+# Range
+print("Range: ", gdp_bq["GDP"].max()-gdp_bq["GDP"].min())
 
+# Mode
+print("Mode: ", gdp_bq["GDP"].mode())
 
+# Quantile
 
-
+ 
+# print(gdp_bq["GDP"][3])
 
 
 # print("aaa")
