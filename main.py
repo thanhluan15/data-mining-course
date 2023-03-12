@@ -53,10 +53,10 @@ print(kurtosis(comRpTimes["Repair Time (Days)"]))
 ### Using Visualization
 
 #Histogram
-histogram  = plt.hist(comRpTimes)
+histogram  = plt.hist(comRpTimes["Repair Time (Days)"])
 plt.show()
 
 #Box Plot
-boxplot = plt.boxplot(comRpTimes)
+boxplot = plt.boxplot(comRpTimes["Repair Time (Days)"])
 plt.show()
 
